@@ -1,0 +1,752 @@
+html, body, header
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, h2.index, .submain {
+    background: url(pictures/wallp.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+
+body#racing {
+    background: url(pictures/wallp1.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+
+div.submain {
+    height: 75px;
+}
+
+header {
+    height: 25px;
+    margin-top: 0;
+}
+
+main#index {
+    margin-top:130px;
+    background-color: rgb(50, 48, 54);
+    width: 100%;
+
+}
+
+/* main div:first-child{
+    background-color: rgb(50, 48, 54);
+    padding: 33px;
+} */
+
+section {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-bottom: 600px;
+}
+
+article {
+    margin-top: 15vh;
+    margin-bottom: 13vh;
+    color: rgb(168, 168, 168);
+    font-weight: 500;
+}
+
+article > p {
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+}
+
+ul.container {
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0; 
+}
+
+img.imgcontainer{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.subcontainer {
+    height: 42vh;
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+}
+
+.centered {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered#racing {
+    position: absolute;
+    transform: translate(-90%, 70%);
+    background-color: transparent;
+}
+
+.subcentered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-weight: 100;
+    font-size: xx-small;
+}
+
+.subcentered#racing {
+    position: absolute;
+    transform: translate(-350%, 1000%);
+    font-weight: 100;
+    font-size: xx-small;
+    background-color: transparent;
+}
+
+h1 {
+    color: white;
+    padding-bottom: 5px;
+    margin:0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+h2.accessories {
+    margin-left: 5vw; margin-right: 5vw; 
+    text-align: left;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(50, 48, 54);
+}
+
+h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    padding: 30px;    
+}
+
+h3 {
+    font-weight: 900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+h4, h5 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+ul.moto {
+    list-style-type: none;
+    z-index: 2;
+    height: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px 40px;
+    margin-top: 0;
+}
+
+
+ul.moto img {
+    width: 350px;
+    height: 220px;
+    transition: transform .5s;
+
+}
+
+ul.acc {
+    list-style-type: none;
+    z-index: 2;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px 50px;
+    margin-top: 0;
+    margin-left: 5vw; margin-right: 5vw;
+    padding: 0;
+}
+
+ul.acc img {
+    width: 150px;
+    height: 150px;
+}
+
+ul.acc li {
+    animation-name: liSelectReverse;
+    animation-duration: 400ms;
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(50, 48, 54);
+    
+}
+
+ul.acc li:hover {
+    animation-name: liSelect;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes liSelect {
+    0% {    
+        transform: translate(0px, 0px);
+        background-color: rgb(50, 48, 56);
+    }
+    100% {
+        background-color: rgb(65, 62, 71);
+        transform: translate(-6px, -12px);
+    }    
+}
+
+@keyframes liSelectReverse {
+    0% {
+        background-color: rgb(65, 62, 71);
+        transform: translate(-6px, -12px);
+    }
+
+    100% {
+        background-color: rgb(50, 48, 56);
+        transform: translate(0px, 0px);
+    }
+    
+}
+
+
+ul.menu {
+    margin-top: 0;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    list-style-type: none;
+    position: fixed;
+    z-index: 3;
+}
+
+@media screen and (max-width: 1170px)
+{
+    div.submain {
+        margin-top: 15vh;
+    }
+    
+}
+
+@media screen and (max-width: 549px) {
+    div.submain {
+        height: 1000px;
+    }
+
+    ul.moto img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 780px)
+{
+    div.submain {
+        height: 1700px;
+    }
+    ul.moto {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    ul.moto img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    ul.container > li {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px)
+{    
+    li img.image{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 699px)
+{   
+    li a.menubttn, .dropbtn {
+        padding: 0px;
+    }      
+    
+    li img.image{
+        display: none;
+    }
+    
+    ul.menu {
+        display: inline;
+    }
+
+}
+
+#racing {
+    background-color: rgb(2, 77, 169);
+}
+
+a#racing {
+    color: white;
+}
+
+h2#racing {
+    color: white;
+    background-color: rgb(0, 0, 75);
+}
+
+article{
+    margin-left: 2vw;
+}
+
+article#racing {
+    color: white;
+    margin-top: 22vh;
+    background-color: transparent;
+}
+
+.menu li {
+    background-color: rgb(231, 231, 231);
+    float: left;
+}
+
+span#sale {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    color: gray;
+    text-decoration: line-through;
+}
+
+span#salebox {
+    position:absolute;
+    background-color: rgb(162, 0, 0);
+    color: white;
+    font-family: fantasy;
+    height: 20px;
+    width: 70px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+span#price {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+    color: rgb(251, 81, 65);
+
+}
+
+img + p {
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+li a.menubttn, .dropbtn {
+    display: block;
+    padding: 2vw;
+    padding-top: 35px;
+    padding-bottom: 37px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: large;
+    color: rgb(90, 87, 87);
+    text-decoration: none;
+}   
+
+.dropdown-content > .menubttn::before {
+    counter-increment: section;
+    content: " 0" counter(section);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(231, 231, 231);
+}
+
+.dropdown-content > .menubttn#racing::before {
+    counter-increment: section;
+    content: " 0" counter(section);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(2, 77, 169);
+}
+
+.dropEq::after {
+    content: " - Equipment";
+}
+
+.dropDn::after {
+    content: " - Design";
+    
+}
+    .dropP::after {
+    content: " - Performance";
+}
+
+.dropG::after {
+    content: " - Garage";
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: rgb(231, 231, 231);
+    margin: 0;
+}
+
+li a.menubttn:hover + hr{
+    background-color: rgba(255, 0, 0, 0.662);
+    height: 2px;
+    margin: 0;
+}
+
+li a:hover + hr#racing {
+    background-color: white;
+    height: 2px;
+    margin: 0;
+}
+
+ li a:not(.image):active { 
+    background-color: rgb(199, 199, 199); 
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    width: 300px;
+
+}
+
+.dropdown-content {
+    counter-reset: section;
+    display: none;
+    width: 20vw;
+    height: 53vh;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+    background-color: rgb(231, 231, 231);
+    text-decoration: none;
+    border: 1px solid gray;
+    animation: ddanim 0.35s ;
+
+}
+
+@keyframes ddanim {
+        0%{
+        transform: rotateY(-90deg);
+        }
+        70%{
+        transform: rotateY(20deg);
+        }
+        100% {
+        transform: rotateY(0deg);
+        }
+    
+}
+
+.dropdown-content > a {
+    display: block;
+    color: black;
+    height: auto;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white;
+}
+
+.dropdown-content a#racing:hover {
+    background-color: white;
+    color: rgb(2, 77, 169);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li img.image{
+    padding: 12px;
+    width: 200px;
+}
+
+li img.image#racing{
+    padding: 12px;
+    height: 65px;
+    width: 200px;
+}
+
+ul.moto img:hover {
+    transform: scale(1.5);
+}
+
+.imgYamahaLogos{
+    width: 500px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newImgYamahaLogos {
+    position: relative;
+    transform: scale(2);
+    z-index: 3;
+}
+
+.loadingScreen {
+    background: rgba(255, 255, 255, 0.579);
+}
+
+.progress-bar{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.progress{
+    width: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.673);
+    transition: width 0.5s ease;
+}
+
+a#SHOPNOW {
+    background-color: rgb(220, 32, 15);
+    padding: 16px;
+    display: block;
+    height: 30px;
+    width: 100px;
+    margin: auto;
+    margin-top: 20vh;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+
+a#login {
+    background-color: rgb(189, 27, 12);
+    padding: 13px;
+    width: 50px;
+    display: block;
+    margin-left: 25vw;
+    margin-top: 3vh;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+a#login:hover{
+    background-color: rgb(231, 231, 231);
+    color: rgb(189, 27, 12);
+}
+
+.container-login {
+    background-color: white;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    display: flex;
+    width: 25vw;
+    height: 60vh;
+    border-radius: 15px;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-login h1{
+    color: rgb(76, 76, 76);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 1px solid silver;
+}
+
+
+
+.txt-field input{
+    border: none;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+}
+
+.txt-field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.txt-field input:focus ~ label,
+.txt-field input:active ~label{
+    top: -5px;
+}
+
+
+.txt-field label{
+    position: absolute;
+    top: -5px;
+    color: silver;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+#form{
+    width: 15vw;
+    height: 35vh;
+}
+
+form .txt-field {
+    border-bottom: 1px solid silver;
+    position: relative;
+    margin: 30px 0;
+}
+
+.txt-field input:valid{
+    top: -5px;
+}
+
+.datanasterii{
+    color: silver;
+}
+
+input[type="submit"]{
+    background-color: rgb(189, 27, 12);
+    width: 100%;
+    height: 35px;
+    display: block;
+    margin-top: 3vh;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+div#profile{
+    border-radius: 50%;
+    background-color: rgb(38, 38, 38);
+    padding: 2px;
+    width: 10px;
+    height:10px;
+    margin-left: 30vw;
+    margin-top: 3vh;
+    cursor: pointer;
+}
+
+div#subprofile {
+    width: 0px;
+    height: 0px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 20px solid rgb(38,38,38);
+    padding: 5px;
+    transform: translate(-4px, 2px);
+    border-radius: 7px;
+}
+
+.popup {
+    width: 400px;
+    background-color:rgb(168, 168, 168);
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 30px 30px 30px;
+    color: #333; 
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+}
+
+.open-popup{
+    visibility: visible;
+    top: 350%;
+    height: 300px;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.open-popup h1{
+    margin: 25px;
+}
+
+.open-popup h4{
+    text-align: left;
+}
+
+.open-popup div{
+    margin-top: 60px;
+}
+
+.open-popup div small{
+    cursor: pointer;
+}
+
+button#ok{
+    cursor: pointer;
+    background-color:rgb(162, 0, 0);
+    color: white;
+    border-radius: 5px;
+    width: 80px;
+    margin-left: 200px;
+}
